@@ -28,9 +28,11 @@
                         <td>{{ $item->series }}</td>
                         <td>{{ $item->sale_date }}</td>
                         <td>
-                            <button type="button" class="btn btn-success">
-                                <a href="#">Details</a>
-                            </button>
+                            <a href="{{ route('comics.show', ['comic' => $item->id]) }}">
+                                <button type="button" class="btn btn-success">
+                                    Details
+                                </button>
+                            </a>
                         </td>
                     </tr>
                 @endforeach
