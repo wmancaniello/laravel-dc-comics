@@ -18,7 +18,7 @@
             </ul>
         </div>
         <a href="{{ route('comics.create') }}">
-            <button>Create</button>
+            <button type="button" class="btn btn-success">Create</button>
         </a>        
     </div>
 </nav>
