@@ -8,6 +8,7 @@
             <thead>
                 <tr>
                     <th scope="col">#</th>
+                    <th scope="col">Image</th>
                     <th scope="col">TITLE</th>
                     <th scope="col">Price</th>
                     <th scope="col">Series</th>
@@ -19,6 +20,11 @@
                 @foreach ($listaComic as $item)
                     <tr>
                         <th scope="row">{{ $item->id }}</th>
+                        <td>
+                            <a href="{{ route('comics.show', ['comic' => $item->id]) }}">
+                                <img class="ms_img" src="{{ $item->thumb }}" alt="{{ $item->title }}">
+                            </a>
+                        </td>
                         <td>
                             <strong>
                                 {{ $item->title }}
