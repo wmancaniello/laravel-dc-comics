@@ -17,5 +17,8 @@
                 </li>
             </ul>
         </div>
+        <a href="{{ route('comics.create') }}">
+            <button>Create</button>
+        </a>        
     </div>
 </nav>
