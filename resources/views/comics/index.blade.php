@@ -34,11 +34,23 @@
                         <td>{{ $item->series }}</td>
                         <td>{{ $item->sale_date }}</td>
                         <td>
-                            <a href="{{ route('comics.show', ['comic' => $item->id]) }}">
-                                <button type="button" class="btn btn-success">
-                                    Details
-                                </button>
-                            </a>
+                            <div class="d-flex gap-2">
+                                <a href="{{ route('comics.show', ['comic' => $item->id]) }}">
+                                    <button type="button" class="btn btn-success">
+                                        Details
+                                    </button>
+                                </a>
+                                <a href="{{ route('comics.edit', ['comic' => $item->id]) }}">
+                                    <button type="button" class="btn btn-success">
+                                        Modify
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button type="button" class="btn btn-danger">
+                                        Delete
+                                    </button>
+                                </a>
+                            </div>
                         </td>
                     </tr>
                 @endforeach
