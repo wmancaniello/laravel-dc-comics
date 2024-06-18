@@ -45,11 +45,13 @@
                                         Modify
                                     </button>
                                 </a>
-                                <a href="">
-                                    <button type="button" class="btn btn-danger">
+                                <form action="{{ route('comics.destroy', ['comic' => $item->id]) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger">
                                         Delete
                                     </button>
-                                </a>
+                                </form>
                             </div>
                         </td>
                     </tr>
