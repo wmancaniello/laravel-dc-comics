@@ -41,7 +41,7 @@
                                     </button>
                                 </a>
                                 <a href="{{ route('comics.edit', ['comic' => $item->id]) }}">
-                                    <button type="button" class="btn btn-success">
+                                    <button type="button" class="btn btn-warning">
                                         Modify
                                     </button>
                                 </a>
